@@ -20,14 +20,14 @@
       <p>
 
       <label name="title">작품 제목</label>
-      <input type="text">
+      <input type="text" maxlength="30" minlength="1"> <!--text box안에 들어갈 수 있는 최소 최대의 글자 수를 지정-->
 
       </p>
 
       <p>
 
         <label name="author">작가 이름</label>
-        <input type="text">
+        <input type="text" maxlength="10" minlength="1">
 
       </p>
         
@@ -50,7 +50,7 @@
 
         <label name="genre">장르</label>
         
-        <input type="checkbox" id="daily" name="genre">
+        <input type="checkbox" id="daily" name="genre"> 
         <label for="daily">일상</label>
 
         <input type="checkbox" id="gag" name="genre">
@@ -67,7 +67,8 @@
       <p>
 
         <label name="storyline">줄거리</label>
-        <textarea name="synopsis" id="syn" cols="20" rows="10"></textarea>
+        <textarea name="synopsis" id="syn" cols="20" rows="10" 
+        maxlength="300" minlength="1"></textarea>
 
       </p>
 
