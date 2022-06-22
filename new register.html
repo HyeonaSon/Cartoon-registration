@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>새 작품 등록하기</title>
+  <script defer src="reg.js"></script> 
+
+  
+
+</head>
+
+
+<body>
+  <header>새 작품 등록하기</header>
+
+  <section>
+    <aside>
+
+      <p>
+
+      <label name="title">작품 제목</label>
+      <input type="text">
+
+      </p>
+
+      <p>
+
+        <label name="author">작가 이름</label>
+        <input type="text">
+
+      </p>
+        
+      <p>
+
+        <label name="form">형식</label>
+
+        <input type="radio" id="eps" name="form"> <!--name이 같은 것 중에서 하나를 선택한다.-->
+        <label for="eps">에피소드</label>
+
+        <input type="radio" id="omn" name="form">
+        <label for="omn">옴니버스</label>
+        
+        <input type="radio" id="sto" name="form">
+        <label for="sto">스토리</label>
+        
+      </p>
+
+      <p>
+
+        <label name="genre">장르</label>
+        
+        <input type="checkbox" id="daily" name="genre">
+        <label for="daily">일상</label>
+
+        <input type="checkbox" id="gag" name="genre">
+        <label for="gag">개그</label>
+
+        <input type="checkbox" id="action" name="genre">
+        <label for="action">액션</label>
+
+        <input type="checkbox" id="fantasy" name="genre">
+        <label for="fantasy">판타지</label>
+    
+      </p>
+      
+      <p>
+
+        <label name="storyline">줄거리</label>
+        <textarea name="synopsis" id="syn" cols="20" rows="10"></textarea>
+
+      </p>
+
+      <p>
+
+        <label name="thumbnail">썸네일</label>
+
+        <label for="file-input">파일 용량 100MB 이하 / jpg만 업로드 가능</label>
+        <input type="file" id="file-input" accept='.jpg' /> <!-- accept 허용할 파일 유형을 나타내는 문자열 -->
+
+      </p>
+
+    </aside>
+
+  </section>
+</body>
+</html>
