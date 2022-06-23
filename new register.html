@@ -4,85 +4,160 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>새 작품 등록하기</title>
+
   <script defer src="reg.js"></script> 
 
   
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+
+  <style>
+
+      body{
+      background-color: #EFEDE9;
+      }
+
+      header{
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
+      }
+
+      div{
+        margin: 15px;
+        
+      }
+
+      [name="title"] {
+        
+        font-weight: 530;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+
+
+      .wrap {
+
+          color: #191919;
+          font-size: 22px;
+          font-weight: 500;
+          font-family: ‘SUIT Variable’, sans-serif;
+
+          width: 1000px;
+          margin: 100px auto 0px auto;
+
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          
+        }
+
+
+      #area{
+        height: 100px;
+      }
+
+      input[type="text"]{
+        width:500px;
+        height:30px;
+        font-size:25px;
+        text-decoration-color: #191919;
+      }
+
+      input[type="radio"]{
+        width: 20px;
+        height:20px;
+        text-decoration-color: #191919;
+      }
+
+      input[type="checkbox"]{
+        width: 20px;
+        height:20px;
+        text-decoration-color: #191919;
+      }
+
+
+  </style>
 
 </head>
 
 
 <body>
-  <header>새 작품 등록하기</header>
 
-  <section>
-    <aside>
+  <div class="wrap">
+    <header>새 작품 등록하기</header>
 
-      <p>
+    <section>
 
-      <label name="title">작품 제목</label>
-      <input type="text" maxlength="30" minlength="1"> <!--text box안에 들어갈 수 있는 최소 최대의 글자 수를 지정-->
+        <div>
 
-      </p>
+        <label name="title">작품 제목</label>
+        <input type="text" maxlength="30" minlength="1"> <!--text box안에 들어갈 수 있는 최소 최대의 글자 수를 지정-->
 
-      <p>
+        </div>
 
-        <label name="author">작가 이름</label>
-        <input type="text" maxlength="10" minlength="1">
+        <div>
 
-      </p>
-        
-      <p>
+          <label name="title">작가 이름</label>
+          <input type="text" maxlength="10" minlength="1">
 
-        <label name="form">형식</label>
+        </div>
+          
+        <div>
 
-        <input type="radio" id="eps" name="form"> <!--name이 같은 것 중에서 하나를 선택한다.-->
-        <label for="eps">에피소드</label>
+          <label name="title">형식</label>
 
-        <input type="radio" id="omn" name="form">
-        <label for="omn">옴니버스</label>
-        
-        <input type="radio" id="sto" name="form">
-        <label for="sto">스토리</label>
-        
-      </p>
+          <input type="radio" name="form" id="ro"> <!--name이 같은 것 중에서 하나를 선택한다.-->
+          <label for="ro">에피소드</label>
 
-      <p>
+          <input type="radio" name="form" id="ro">
+          <label for="ro">옴니버스</label>
+          
+          <input type="radio" name="form" id="ro">
+          <label for="ro">스토리</label>
+          
+        </div>
 
-        <label name="genre">장르</label>
-        
-        <input type="checkbox" id="daily" name="genre"> 
-        <label for="daily">일상</label>
+        <div>
 
-        <input type="checkbox" id="gag" name="genre">
-        <label for="gag">개그</label>
+          <label name="title">장르</label>
+          
+          <input type="checkbox" id="daily" name="genre"> 
+          <label for="daily">일상</label>
 
-        <input type="checkbox" id="action" name="genre">
-        <label for="action">액션</label>
+          <input type="checkbox" id="gag" name="genre">
+          <label for="gag">개그</label>
 
-        <input type="checkbox" id="fantasy" name="genre">
-        <label for="fantasy">판타지</label>
-    
-      </p>
+          <input type="checkbox" id="action" name="genre">
+          <label for="action">액션</label>
+
+          <input type="checkbox" id="fantasy" name="genre">
+          <label for="fantasy">판타지</label>
       
-      <p>
+        </div>
+        
+        <div>
 
-        <label name="storyline">줄거리</label>
-        <textarea name="synopsis" id="syn" cols="20" rows="10" 
-        maxlength="300" minlength="1"></textarea>
+          <label name="title">줄거리</label>
+          <input type="text" maxlength="10" minlength="1" id="area">
 
-      </p>
+        </div>
 
-      <p>
+        <div>
 
-        <label name="thumbnail">썸네일</label>
+          <label name="title" for="file-input">썸네일</label>
+          <span>파일 용량 100MB 이하 <br> / jpg만 업로드 가능</span>  
+          <input type="file" id="file-input" accept='.jpg' /> <!-- accept 허용할 파일 유형을 나타내는 문자열 -->
 
-        <label for="file-input">파일 용량 100MB 이하 / jpg만 업로드 가능</label>
-        <input type="file" id="file-input" accept='.jpg' /> <!-- accept 허용할 파일 유형을 나타내는 문자열 -->
 
-      </p>
 
-    </aside>
+        </div> 
 
-  </section>
+    </section>
+  </div>
 </body>
 </html>
